@@ -1,0 +1,21 @@
+# Normalize line endings in the repository; decide per file type on checkout.
+* text=auto eol=lf
+
+# Windows launchers must keep CRLF to run reliably in cmd.exe.
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.vbs text eol=crlf
+
+# Unix launchers must keep LF (a CR in the shebang line breaks execution).
+*.sh text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.bmp binary
+*.avif binary
+*.heic binary
